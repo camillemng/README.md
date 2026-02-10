@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>BellePeau – Crèmes pour le corps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h1>BellePeau</h1>
+    <p>Deux crèmes. Rien de plus.</p>
+</header>
+
+<main>
+    <section class="products">
+
+        <article class="product" data-id="1" data-name="Crème hydratante" data-price="19.90">
+            <img src="creme-hydratante.jpg" alt="Crème hydratante">
+            <h2>Crème hydratante</h2>
+            <p>Pour une peau douce au quotidien.</p>
+            <p class="price">19,90 €</p>
+            <button class="buy" onclick="addToCart(1, 'Crème hydratante', 19.90)">Acheter</button>
+        </article>
+
+        <article class="product" data-id="2" data-name="Crème nourrissante" data-price="24.90">
+            <img src="creme-nourrissante.jpg" alt="Crème nourrissante">
+            <h2>Crème nourrissante</h2>
+            <p>Pour les peaux sèches et sensibles.</p>
+            <p class="price">24,90 €</p>
+            <button class="buy" onclick="addToCart(2, 'Crème nourrissante', 24.90)">Acheter</button>
+        </article>
+
+    </section>
+</main>
+
+<aside class="cart-container">
+    <div class="cart-header">
+        <h3>Panier</h3>
+        <button class="cart-toggle" id="cartToggle">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Le panier est vide</p>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            Total: <span id="cartTotal">0,00 €</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn" disabled>Commander</button>
+    </div>
+</aside>
+
+<footer>
+    <p>© 2026 BellePeau</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
